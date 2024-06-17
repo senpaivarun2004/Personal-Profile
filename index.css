@@ -1,0 +1,129 @@
+body {
+    font-family: Comic Sans MS;
+    color: #ffffff;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #1257b7d9;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.179);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4f85d6e2;
+    border-radius: 5px;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    color: #ffffff;
+    animation: fadeIn 0.9s ease-in-out forwards;
+}
+
+.page.active {
+    display: block;
+    background-size: cover;
+}
+
+.page.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: rgb(5, 6, 0);
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 25%;
+    height: min-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.profile-photo.fullscreen {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    margin-right: 0;
+    box-shadow: beige;
+    z-index: 1000;
+}
+
+.layout-box {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b67575dd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 235, 136, 0.595);
+    cursor: pointer;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 18px whitesmoke;
+}
+
+
+
+
+.profile-info p:hover, .achievements-info p:hover, .skills-info p:hover {
+    transform: scale(1.02);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
